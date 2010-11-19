@@ -204,7 +204,7 @@ def copy_directory_with_exclusion(source, target, exclude):
             skip = 0
             for exclusion in exclude:
               if root.find(exclusion) > -1:
-                print "-- Skipping %s" %(os.path.join(root, file))
+                # print "-- Skipping %s" %(os.path.join(root, file))
                 skip = 1
             # Skipping the file if exclusion has been found
             if skip == 1:
